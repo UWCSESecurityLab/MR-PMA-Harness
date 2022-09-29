@@ -6,13 +6,27 @@ Further details can be found in the paper *"Exploring User Reactions and Mental 
 
 If you end up building on this research or code as part of a project or publication, please include a reference to the USENIX Security paper:
 
-## System Overview 
+## Harness Overview 
 
-## Pre-requisite 
+Our harness contains two main module. 
 
-## Index For Key Files 
+The Mixed Reality Module, which is implemented thorugh Unity, utilized OpenCV and ZED Mini library to generate the PMA content and rendered in MR headset (6).
 
-## Usage 
+Server Module, which is implemented through Nodejs, connects the experiment interface (12), database (4), and Mixed Reality Module through socket.io (11).
+
+<img
+  src="images/MR%20Testbed%20Figure.jpg"
+  title="System Overview"
+  style="display: inline-block; margin: 0 auto; max-width: 500px">
+
+### Mixed Reality Module
+* `UNITY-MR/Assets` - contains PMA code, library asset, Scenes, and plugins. 
+* `UNITY-MR/Assets/MR_Scenes` - contains the experiment VR Scenes.
+
+### Server Module
+* `Nodejs+DB/DB` - contains code to connect nodejs to MongoDB (URL already anonymized)
+* `Nodejs+DB/public` - contains code for experiment interface (need to set up live server first to access local file)
+* `Nodejs+DB/server.js` - main code
 
 ## Contact
 If you have any questions, feel free to contact Kaiming (kaimingc@cs.washington.edu) 
