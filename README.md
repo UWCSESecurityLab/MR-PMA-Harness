@@ -6,6 +6,10 @@ Further details can be found in the paper *"Exploring User Reactions and Mental 
 
 If you end up building on this research or code as part of a project or publication, please include a reference to the USENIX Security paper:
 
+## Tested Setup
+
+All he code of this repository was tested on a Windows 10 machine with Unity version 2019.4.12f1, Oculus Quest 2, and Zed Mini.
+
 ## Harness Overview 
 
 Our harness contains two main module. 
@@ -26,7 +30,7 @@ Server Module, which is implemented through Nodejs, connects the experiment inte
 ### Server Module
 * `Nodejs+DB/DB` - contains code to connect nodejs to MongoDB (URL already anonymized)
 * `Nodejs+DB/public` - contains code for experiment interface (need to set up live server first to access local file)
-* `Nodejs+DB/server.js` - main code
+* `Nodejs+DB/server.js` - run this file to set up the server 
 
 ## Contact
 If you have any questions, feel free to contact Kaiming (kaimingc@cs.washington.edu) 
