@@ -9,7 +9,7 @@ If you end up building on this research or code as part of a project or publicat
 @inproceedings{cheng2023pma,
     title = {Exploring User Reactions and Mental Models Towards Perceptual Manipulation Attacks in Mixed Reality},
     author = {Cheng, Kaiming and Tian, Jeffery F. and Kohno, Tadayoshi and Roesner, Franziska},
-    booktitle = {Proc. of USENIX Security},
+    booktitle = {32nd USENIX Security Symposium (USENIX Security 23)},
     year = {2023}
 }
 ```
