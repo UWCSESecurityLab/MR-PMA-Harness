@@ -2,7 +2,7 @@
 
 The repository contains the code for launching and captureing the impact of Perceptual Manipulation Attacks (PMA) in Mixed Reality on end user.
 
-Further details can be found in the paper *"Exploring User Reactions and Mental Models Towards Perceptual Manipulation Attacks in Mixed Reality"* by Kaiming Cheng, Jeffery F. Tian, Franziska Roesner and Tadayoshi Kohno. 
+Further details can be found in the paper *"Exploring User Reactions and Mental Models Towards Perceptual Manipulation Attacks in Mixed Reality"* by Kaiming Cheng, Jeffery F. Tian, Franziska Roesner and Tadayoshi Kohno, USENIX Security 2023.
 
 If you end up building on this research or code as part of a project or publication, please include a reference to the USENIX Security paper:
 
