@@ -8,11 +8,11 @@ If you end up building on this research or code as part of a project or publicat
 
 ## Tested Setup
 
-All he code of this repository was tested on a Windows 10 machine with Unity version 2019.4.12f1, Oculus Quest 2, and Zed Mini.
+All code of this repository was tested on a Windows 10 machine with Unity version 2019.4.12f1, Oculus Quest 2, and Zed Mini.
 
 ## Harness Overview 
 
-Our harness contains two main module. 
+Our harness contains two main modules. 
 
 The Mixed Reality Module, which is implemented thorugh Unity, utilized OpenCV and ZED Mini library to generate the PMA content and rendered in MR headset (6).
 
@@ -21,10 +21,10 @@ Server Module, which is implemented through Nodejs, connects the experiment inte
 <img
   src="images/MR%20Testbed%20Figure.jpg"
   title="System Overview"
-  style="display: inline-block; margin: 0 auto; max-width: 500px">
+  style="display: inline-block; margin: 0 auto; max-width: 450px">
 
 ### Mixed Reality Module
-* `UNITY-MR/Assets` - contains PMA code, library asset, Scenes, and plugins. 
+* `UNITY-MR/Assets` - contains PMA code, library asset, scenes, and plugins. 
 * `UNITY-MR/Assets/MR_Scenes` - contains the experiment VR Scenes.
 
 ### Server Module
