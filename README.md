@@ -5,6 +5,14 @@ The repository contains the code for launching and capturing the impact of Perce
 Further details can be found in the paper *"Exploring User Reactions and Mental Models Towards Perceptual Manipulation Attacks in Mixed Reality"* by Kaiming Cheng, Jeffery F. Tian, Tadayoshi Kohno, and Franziska Roesner.
 
 If you end up building on this research or code as part of a project or publication, please include a reference to the USENIX Security paper.
+```
+@inproceedings{cheng2023pma,
+    title = {Exploring User Reactions and Mental Models Towards Perceptual Manipulation Attacks in Mixed Reality},
+    author = {Cheng, Kaiming and Tian, Jeffery F. and Kohno, Tadayoshi and Roesner, Franziska},
+    booktitle = {Proc. of USENIX Security},
+    year = {2023}
+}
+```
 
 
 
