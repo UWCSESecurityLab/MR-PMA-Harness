@@ -7,45 +7,16 @@ using UnityEngine;
 
 public class MarkerObject_MoveToMarker : MarkerObject
 {
-    /// <summary>
-    /// If true, will disable (set inactive) this object's gameObject when it was visible, but then is no longer visible. 
-    /// </summary>
-    [Tooltip("If true, will disable (set inactive) this object's gameObject when it was visible, but then is no longer visible. ")]
+
     public bool disableWhenNotSeen = true;
-
-    /// <summary>
-    /// How many consecutive frames of detection does this object not have to be seen before it's disabled.
-    /// Used to avoid flickering when noise causes frames not to be detected for a short time
-    /// when they're actually in view of the camera.
-    /// </summary>
-    [Tooltip("How many consecutive frames of detection does this object not have to be seen before it's disabled.\r\n" +
-        "Used to avoid flickering when noise causes frames not to be detected for a short time " +
-        "when they're actually in view of the camera.")]
     public int missedFramesUntilDisabled = 10;
-    /// <summary>
-    /// How many frames in a row the corresponding marker was not seen. 
-    /// </summary>
     private int hiddenFramesCount = 0;
-
-    /// <summary>
-    /// How many frames to use to smooth marker position/rotation updates.
-    /// Larger numbers reduce jitter from detection inaccuracy, but add latency to the marker's movements.
-    /// </summary>
-    [Tooltip("How many frames to use to smooth marker position/rotation updates. " +
-        "Larger numbers reduce jitter from detection inaccuracy, but add latency to the marker's movements.")]
     public int smoothedFrames = 8;
     public int attack_sequence = 2;
     public bool poker = false;
 
-    /// <summary>
-    /// List of last X positions updated, where X is the max number of smoothed frames (unless that many haven't happened yet).
-    /// Used for smoothing positions. 
-    /// </summary>
+
     private CappedStack<Vector3> positionStack;
-    /// <summary>
-    /// List of last X rotations updated, where X is the max number of smoothed frames (unless that many haven't happened yet).
-    /// Used for smoothing rotations. 
-    /// </summary>
     private CappedStack<Quaternion> rotationStack;
 
     private void Awake()

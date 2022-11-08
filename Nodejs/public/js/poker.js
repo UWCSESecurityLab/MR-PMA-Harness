@@ -13,10 +13,7 @@ const timer = ms => new Promise(res => setTimeout(res, ms))
 
 //initiate event listener & phasing
 squareBtn.addEventListener("click",()=> startGame());
-
 HomeBtn.addEventListener("click",()=> returnHome());
-// NextBtn.addEventListener("click",()=> nextRound());
-
 window.addEventListener("mousemove",cursor)
 
 
@@ -34,11 +31,8 @@ async function startGame(){
    
     document.getElementById("start_title").innerHTML = "..."
     document.getElementById("start_text").innerHTML = "Look Around to find the video"
-    
-    //send sigmal to Unity VideoPlayer
     launchSignal()
     loadInstruction()
-   // Thankyou()
 }
 
 function Thankyou(){
@@ -47,7 +41,6 @@ function Thankyou(){
 }
 
 async function loadInstruction(){
-    //Need to record when pressing the ENTER KEY 
     await timer (15000)
     document.getElementById("start_text").innerHTML = instructions[0]  
     await timer (3000)

@@ -24,25 +24,17 @@ public class NetworkClient : SocketIOComponent
     public  string MemoryID { get; private set; }
 
     public  string temp = "temp";
-    // AudioSource audioData;
-    // Start is called before the first frame update
+
     public override void Start()
     {
         base.Start();
         setupEvents();
         Debug.LogFormat("network established");
-        //FindObjectOfType<AudioManager>().Play("fire");
     }
 
-    // Update is called once per frame
     public override void Update()
     {
         base.Update();
-        //Test if the update function is getting called 
-        // On("open", (E) =>
-        // {
-        //     Debug.LogFormat("Update made to Unity");
-        // });
         On("start_test",(E)=>{
                 Debug.LogFormat(E.data.ToString());
             }
@@ -106,11 +98,6 @@ public class NetworkClient : SocketIOComponent
              });
         On("trigger", (E) =>
         {
-            // bool check = true;
-            // if (check){
-            //     Debug.LogFormat("notification Sound is playing");
-            //     check = false;
-            // }
             FindObjectOfType<AudioManager>().Play("notification");
             Debug.LogFormat("notification Sound is playing");
         });

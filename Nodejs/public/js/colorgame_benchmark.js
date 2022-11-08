@@ -38,21 +38,18 @@ function nextRound(){
             NextBtn.phasing = "second";
             gameRoundMax = 10; 
             squareBtn.phasing  = "starting"
-            //ChangeSquare(squareBtn);
             break
         case "second":
             NextBtn.phasing = "third";
             document.getElementById("next_text").innerHTML = "Click anywhere to start.";
             gameRoundMax = 10; 
             squareBtn.phasing  = "starting"
-            //ChangeSquare(squareBtn)
             break
         case "third":
             NextBtn.phasing = "fourth";
             document.getElementById("next_text").innerHTML = "Click anywhere to start.";
             gameRoundMax = 10; 
             squareBtn.phasing  = "starting"
-            //ChangeSquare(squareBtn)
         case "fourth":
             location.href="/index.html"
         default:
@@ -75,9 +72,6 @@ function start(){
 function TurningGreen(){
 
     answer = setTimeout(()=>{        
-        console.log("im testing")
-
-
         /***
          * Here we trigger the attack signal 
          * [perfect alignment with green]
@@ -174,9 +168,7 @@ function TurningGreen(){
         squareBtn.phasing = "Answer_Time";
     },this.timeWaiting);
     return answer
-  
 }
-
 //simple average function
 function arrayAverage(arr){
     var sum = 0;
@@ -244,7 +236,6 @@ function ChangeSquare(squareBtn){
                         console.log("Request complete! response:", res);
                     });
 
-
                 }
                 if (NextBtn.phasing == "second"){
                     document.getElementById("start_text").innerHTML = arrayAverage(result) + "ms" + "<br />" + "Click on" + " <span class='month'>" + "Next Game" + "</span> ";
@@ -256,11 +247,8 @@ function ChangeSquare(squareBtn){
                     document.getElementById("start_text").innerHTML = arrayAverage(result) + "ms" + "<br />" + "<br />" + "Put on Mixed Reality Headset"+"<br />" +"<br />" +  "And click on" + " <span class='month'>" + "Next Game" + "</span> ";
                     document.getElementById("start_text").addEventListener("click",()=> nextRound(),{once : true});
                     result = []
-
                 }
-
             }
-            
             break
         default:
             break;

@@ -68,10 +68,8 @@ function changeBackground(color) {
     
     // inject attack signal
     if (NextBtn.phasing == "third" && currrentSequence == 2){
-       // await timer(1500)
         fetch("//localhost:3000/memory_attack", {
             method: "POST", 
-            //fire alarm
             body: JSON.stringify({"memory_attack_signal":100}),
             headers: { "Content-Type": "application/x-www-form-urlencoded" }
 
@@ -80,10 +78,8 @@ function changeBackground(color) {
         });
     }
     if (NextBtn.phasing == "third" && currrentSequence == 5){
-        // await timer(1500)
          fetch("//localhost:3000/memory_attack", {
              method: "POST", 
-             //bunny
              body: JSON.stringify({"memory_attack_signal":1000}),
              headers: { "Content-Type": "application/x-www-form-urlencoded" }
  

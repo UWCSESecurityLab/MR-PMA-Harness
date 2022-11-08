@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.XR;
+using UnityEngine.XR;
 
 public class HandPresence : MonoBehaviour
 {
@@ -15,9 +15,6 @@ public class HandPresence : MonoBehaviour
     public float flipTime;
     public float viewTime;
     public float timer;
-
-    // private InputDevice rightHand;
-    // private InputDevice leftHand;
     private bool started;
     private bool stopflip = false;
     public  static bool hit_target = false;
@@ -30,17 +27,13 @@ public class HandPresence : MonoBehaviour
     private int iter = 50;
     private int answer = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
         backRenderer = card.transform.Find("Back").GetComponent<Renderer>();
         Debug.Log(backRenderer.materials.Length);
-        // InvokeRepeating("flipcard", 2.0f, 3.0f);
 
     }
-
-
-    // Update is called once per frame
+    
     void Update()
     {
         timer += Time.deltaTime;
@@ -75,18 +68,14 @@ public class HandPresence : MonoBehaviour
                 iter -=1;
                 }
         }
-        // else{
-        //     Debug.Log("answer is "+ answer);
-        // }
+
         if(Time.time<nextUpdate && imageSet){
-        
             started = true;
             card.transform.eulerAngles = new Vector3(-270, 0, 0);
             timer = 0f;
             imageSet = true;
             System.Random rand = new System.Random();
             int randomCard = rand.Next(53);
-            //backRenderer.material = cards[32];
             nextUpdate=Mathf.FloorToInt(Time.time)+1;
         }
 
@@ -96,8 +85,6 @@ public class HandPresence : MonoBehaviour
             card.transform.eulerAngles = new Vector3(0, 0, 0);
             timer = 0f;
         }
-        
-
 
         if (started && stopflip)
         {

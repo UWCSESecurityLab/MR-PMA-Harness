@@ -32,7 +32,7 @@ We tested our code using [Oculus Quest 2](https://www.meta.com/quest/products/qu
 
 ## Software
 
-We tested our code in Unity Version 2019.4.12f1.
+We tested our code in Unity Version 2019.4.12f1 on a local server with port number equals to 3000.
 Our attack module is built on top of the [ZED Plugin for Unity](https://github.com/stereolabs/zed-unity). Please follow their instruction to install all necessary dependencies and load the plugin in your Unity.
 
 # Materials
