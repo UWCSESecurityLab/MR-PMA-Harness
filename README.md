@@ -46,7 +46,6 @@ This repository contains the following materials:
 
 
 ## Unity & ZED
-- `Unity\Asset`: contains the audio material we used in Auditory PMA.
 - `Unity\MR_Scenes`: contains three unity scenes that map to PMA experiment in the paper. 
 - `Unity\Scripts\AudioManager`: contains the code we use to manage the Auditory PMA.
 - `Unity\Scripts\HandPresence`: contains the code we use to display the Situational Awareness Attack.
