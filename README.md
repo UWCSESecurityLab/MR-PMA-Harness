@@ -1,10 +1,7 @@
 # MR-PMA-Harness
 
-<<<<<<< Updated upstream
-The repository contains the code for launching and capturing the impact of Perceptual Manipulation Attacks (PMA) in Mixed Reality on end users.
-=======
-The repository contains the code for launching and captureing the impact of Perceptual Manipulation Attacks (PMA) in Mixed Reality on end user. This project was tested on Windows 10. 
->>>>>>> Stashed changes
+
+The repository contains the code for launching and captureing the impact of Perceptual Manipulation Attacks (PMA) in Mixed Reality on end user. 
 
 Further details can be found in the paper *"Exploring User Reactions and Mental Models Towards Perceptual Manipulation Attacks in Mixed Reality"* by Kaiming Cheng, Jeffery F. Tian, Tadayoshi Kohno, and Franziska Roesner.
 
