@@ -7,11 +7,14 @@ Further details can be found in the paper *"Exploring User Reactions and Mental 
 
 If you end up building on this research or code as part of a project or publication, please include a reference to the USENIX Security paper.
 ```
-@inproceedings{cheng2023pma,
-    title = {Exploring User Reactions and Mental Models Towards Perceptual Manipulation Attacks in Mixed Reality},
-    author = {Cheng, Kaiming and Tian, Jeffery F. and Kohno, Tadayoshi and Roesner, Franziska},
-    booktitle = {32nd USENIX Security Symposium (USENIX Security 23)},
-    year = {2023}
+@inproceedings {285369,
+title = {Exploring User Reactions and Mental Models Towards Perceptual Manipulation Attacks in Mixed Reality},
+booktitle = {32nd USENIX Security Symposium (USENIX Security 23)},
+year = {2023},
+address = {Anaheim, CA},
+url = {https://www.usenix.org/conference/usenixsecurity23/presentation/cheng},
+publisher = {USENIX Association},
+month = aug,
 }
 ```
 
